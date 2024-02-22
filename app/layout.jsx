@@ -1,11 +1,11 @@
 import React from 'react'
 
-const page = () => {
+const layout = () => {
   return (
     <div>
-      page
+      
     </div>
   )
 }
 
-export default page
+export default layout
