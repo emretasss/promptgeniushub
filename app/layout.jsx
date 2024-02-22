@@ -11,9 +11,19 @@ export const metadata ={
 const layout = () => { 
 
   return (
-    <div>
-      
-    </div>
+    <html lang="en">
+   
+    <body>
+        <div className='main'>
+        <div className='gradient' />
+
+        </div>
+        
+
+    </body>
+
+    </html>
+    
   )
 }
 
