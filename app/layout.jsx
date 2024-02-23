@@ -8,7 +8,7 @@ export const metadata ={
 }
 
 
-const layout = () => { 
+const RootLayout = () => { 
 
   return (
     <html lang="en">
@@ -18,7 +18,10 @@ const layout = () => {
         <div className='gradient' />
 
         </div>
-        
+        <main className='app' >
+
+
+        </main>
 
     </body>
 
@@ -27,4 +30,4 @@ const layout = () => {
   )
 }
 
-export default layout
+export default RootLayout;
