@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Children } from 'react'
 import '@styles/globals.css'
 
 export const metadata ={
@@ -8,7 +8,7 @@ export const metadata ={
 }
 
 
-const RootLayout = () => { 
+const RootLayout = ({Children}) => { 
 
   return (
     <html lang="en">
@@ -20,7 +20,7 @@ const RootLayout = () => {
         </div>
         <main className='app' >
 
-
+        {Children}
         </main>
 
     </body>
