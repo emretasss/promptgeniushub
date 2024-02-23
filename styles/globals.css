@@ -169,3 +169,11 @@
 .flex-between {
   @apply flex justify-between items-center;
 }
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+.font-satoshi {
+  /* font özellikleri */
+  font-family: 'Satoshi', sans-serif; /* veya kullanmak istediğiniz fontun adını buraya yazın */
+  /* diğer stillendirme özellikleri */
+}
