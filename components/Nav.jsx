@@ -9,6 +9,13 @@ const Nav = () => {
       <Image src="assets/images/logo.svg" alt="Logo" height={60} width={60} className="object-contain"/>
       <p className='logo_text'> PromptGeniusHub</p>
     </Link>
+
+    <div className='sm:flex hidden ' >
+    
+
+    </div>
+
+
    </nav>
   )
 }
