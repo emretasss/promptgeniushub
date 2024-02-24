@@ -20,6 +20,7 @@ const Nav = () => {
       <Link  href="/create-prompt" className='black_btn' > Create a post</Link>
       <button type='button' onClick={signOut} className="outline_btn" > Sign Out </button>
       <Link href="/profile">
+        <Image src="/assets/images/profile.svg" width={37} height={37} alt="profile" className='rounded-full' />
       </Link>
     </div>
     ): (
