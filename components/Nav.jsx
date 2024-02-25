@@ -62,12 +62,25 @@ const Nav = () => {
 
           {isUserLoggedIn ? (
             <div className='flex' >
-              <Image src="/assets/images/profile.svg" width={37} height={37} alt="profile" className='rounded-full' />
+              <Image src="/assets/images/profile.svg" width={37} height={37} alt="profile" className='rounded-full' onClick={()=> {}} />
 
             </div>
           ):(<>
           
+          {providers && Object.keys(providers).map(
+            (provider)=>( 
+              <button type='button' key={provider.name} 
+              onClick={()=>signIn(provider.id)} 
+              >
+               Sign in 
+              </button>
+            )
+
+
+          )
           
+          }
+         
           
           </>)
           
