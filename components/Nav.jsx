@@ -62,13 +62,18 @@ const Nav = () => {
 
           {isUserLoggedIn ? (
             <div className='flex' >
-              
+              <Image src="/assets/images/profile.svg" width={37} height={37} alt="profile" className='rounded-full' />
+
             </div>
-          )
+          ):(<>
+          
+          
+          
+          </>)
           
         
         }
-         </div>
+         </div> 
           
 
    </nav>
