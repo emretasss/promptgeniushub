@@ -58,7 +58,18 @@ const Nav = () => {
     ) }
 
     </div>
+         <div className='sm:hidden flex relative '>
 
+          {isUserLoggedIn ? (
+            <div className='flex' >
+              
+            </div>
+          )
+          
+        
+        }
+         </div>
+          
 
    </nav>
   )
