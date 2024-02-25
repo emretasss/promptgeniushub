@@ -32,9 +32,28 @@ const Nav = () => {
       </Link>
     </div>
     ): (
-  <>
+         <>
+         
+          {providers && Object.keys(providers).map(
+            (provider)=>( 
+              <button type='button' key={provider.name} 
+              onClick={()=>signIn(provider.id)} 
+              >
+                
+              </button>
+            )
 
-  </>
+
+          )
+          
+          }
+         
+
+
+
+
+
+        </>
 
     ) }
 
