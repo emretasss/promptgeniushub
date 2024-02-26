@@ -6,6 +6,10 @@ import {signIn,  signOut, useSession,getProviders} from 'next-auth/react'
 const Nav = () => {
   const isUserLoggedIn=true;
   const [providers,setProviders ]=useState(null)
+
+
+
+  
   useEffect (()=>{
     const setProviders = async ()=> {
       const response =await getProviders();
@@ -70,7 +74,7 @@ const Nav = () => {
           {providers && Object.keys(providers).map(
             (provider)=>( 
               <button type='button' key={provider.name} 
-              onClick={()=>signIn(provider.id)} 
+              onClick={()=>signIn(provider.id)} className="black_btn"
               >
                Sign in 
               </button>
