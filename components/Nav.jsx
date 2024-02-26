@@ -5,11 +5,12 @@ import { useState,useEffect } from 'react'
 import {signIn,  signOut, useSession,getProviders} from 'next-auth/react'
 const Nav = () => {
   const isUserLoggedIn=true;
-  const [providers,setProviders ]=useState(null)
+  const [providers,setProviders ]=useState(null);
+  const [toggleDropdown, setToggleDropdown ] =useState(false)
 
 
 
-  
+
   useEffect (()=>{
     const setProviders = async ()=> {
       const response =await getProviders();
